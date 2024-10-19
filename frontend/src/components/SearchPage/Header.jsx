@@ -9,29 +9,30 @@ import CreditCardIcon from "@mui/icons-material/CreditCard";
 import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import styled from "styled-components";
+import logo from "./assets/image.png"
 import { Link } from "react-router-dom";
 import { Login } from "../login/Login";
 const Icondivcss = styled.div`
   .icondiv {
-    height: 60px;
+    height: 70px;  /* Increased height for more space */
     margin-top: 20px;
     width: 100%;
     margin: auto;
     background-color: white;
     display: flex;
-    flex-direction: row;
+    align-items: center;  /* Vertically center the items */
+    justify-content: space-around;  /* Add space around elements */
     position: sticky;
     z-index: 100;
     text-align: center;
+
     .icons {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
       width: 60%;
-
       p {
-        padding: 0px;
-        margin: -6px;
+        margin: 0px;
         color: #555454;
         font-size: 11px;
       }
@@ -47,20 +48,27 @@ const Icondivcss = styled.div`
       }
     }
   }
+
   .imgdiv {
-    position: relative;
-    top: 10px;
-    left: 0px;
+    // position: relative;
+    width: auto;
+    height: 120px;
+    padding: 0px 60px 0px 120px;
     img {
-      width: 50%;
+      width: auto;  /* Keep the width auto to maintain aspect ratio */
+      height: 100%;  /* Make sure the image takes full height */
+      max-width: 180px;  /* Set a maximum width for the logo */
+      object-fit: contain;  /* Maintain the aspect ratio */
     }
   }
+
   .login {
-position: relative;
-top: 13px;
-left: 150px;
+    position: relative;
+    margin-left: auto;  /* Push the login button to the right */
+    margin-right: 20px;  /* Add some space on the right */
   }
 `;
+
 
 export const Header = () => {
   const handlePopup = () => {
@@ -72,7 +80,7 @@ export const Header = () => {
       <div className="icondiv">
         <div className="imgdiv">
         <Link to="/">
-            <img src={"https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png"} alt="Logo" />
+            <img src={"https://www.gtp.gr/MGfiles/logos/49684_Travel-Tales-Athens_Logo_600x600.png"} alt="Logo" />
           </Link>
         </div>
         <div className="icons">

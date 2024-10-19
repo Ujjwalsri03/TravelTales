@@ -6,10 +6,10 @@ import { Search } from "./components/SearchPage/Search";
 import Payment from "./components/paymentPage/Payment";
 
 import { Mytrip } from "./components/Booking_page/Getdata";
-// import { Final } from "./components/Booking_page/gourav/Final";
+import { Final } from "./components/Booking_page/ujjwal/Final";
 // import Payment from "./components/paymentPage/Payment";
-// import { Mytrip } from "./components/Booking_page/Getdata";
-import { Final } from "./components/Booking_page/gourav/Final";
+//import { Mytrip } from "./components/Booking_page/Getdata";
+//import { Final } from "./components/Booking_page/gourav/Final";
 
 function App() {
 
